@@ -78,17 +78,18 @@
 Создайте файл `.env` в корне проекта:
 
 ```env
-# LLM
+# LLM 
+OPENAI_API_KEY=sk-api
+OPENAI_MODEL=gpt-4o-mini
+# OPENAI_BASE_URL=http://localhost:1234/v1
+
 LLM_PROVIDER=ollama
 OLLAMA_HOST=http://ollama:11434
 OLLAMA_MODEL=llama3.1
 
-# Embeddings
 EMBEDDING_BACKEND=sbert
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+EMBEDDING_MODEL=multi-qa-MiniLM-L6-cos-v1
 
-# RAG
-RAG_INDEX_PATH=/app/data/rag_store
 K_TOP=4
 ```
 ### 2. Запуск через Docker (PowerShell):
