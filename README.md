@@ -12,6 +12,7 @@
 [Первичная настройка ПАК PT NGFW](https://help.ptsecurity.com/ru-RU/projects/ngfw/1.8/qsguide/9380723723)
 
 В тестах использовались локальные .md-версии этих документов, загруженные через API /ingest/docs.
+
 ---
 
 ## Что внутри:
