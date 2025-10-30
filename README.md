@@ -1,3 +1,9 @@
+
+## Выполнение тестового задания для Positive Technologies
+
+### ✅ Реализовано
+**1. RAG для работы с документацией**  
+
 Бэкенд-сервис для интеллектуального ассистента с поддержкой RAG (Retrieval-Augmented Generation).  
 Проект умеет:
 1. принимать документы;
@@ -79,11 +85,12 @@
 Создайте файл `.env` в корне проекта:
 
 ```env
-# LLM 
+# (опционально) OpenAI
 OPENAI_API_KEY=sk-api
 OPENAI_MODEL=gpt-4o-mini
 # OPENAI_BASE_URL=http://localhost:1234/v1
 
+# LLM (по умолчанию используется Ollama)
 LLM_PROVIDER=ollama
 OLLAMA_HOST=http://ollama:11434
 OLLAMA_MODEL=llama3.1
@@ -102,8 +109,7 @@ docker compose up -d
 ```
 Загрузим модель LLM. Имя контейнера можно узнать через docker ps
 ```powershell
-docker exec -it llm-assistant-backend-ollama-1 ollama pull llama3.1
-
+docker exec -it <container-name> ollama pull llama3.1
 ```
 
 ---
