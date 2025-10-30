@@ -97,7 +97,13 @@ K_TOP=4
 
 ```powershell
 # из корня проекта
-docker compose up --build
+docker compose build
+docker compose up -d
+```
+Загрузим модель LLM. Имя контейнера можно узнать через docker ps
+```powershell
+docker exec -it llm-assistant-backend-ollama-1 ollama pull llama3.1
+
 ```
 
 ---
